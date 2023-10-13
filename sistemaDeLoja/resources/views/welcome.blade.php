@@ -492,7 +492,7 @@ button:hover {
           
 
             <!-- Login Form -->
-            <form method="post" >
+            <form method="post" action="{{route('auth.uer')}}" >
                 @csrf
                 <input type="text" class="fadeIn second" name="email" placeholder="Digite seu usuário" autofocus required>
 

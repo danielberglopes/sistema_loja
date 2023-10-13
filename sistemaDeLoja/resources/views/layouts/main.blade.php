@@ -204,6 +204,15 @@
 							<span>funcionários(a)</span>
 						</a>
 					</li>
+
+					<li>
+						<a href="/">
+							<svg>
+					<img src="img\sair (2).png" alt="" style=" width: 3rem;">
+							</svg>
+							<span>Sair</span>
+						</a>
+					</li>
 				
 				</ul>
 			</nav>

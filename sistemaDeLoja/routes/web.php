@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+
+Route::match(['get', 'post'], '/', [Controller::class,  'logon']);
+
+Route::match(['get', 'post'], '/auth', [Controller::class, 'auth'])->name('auth.uer');
 
 Route::get('/telaPrincipal', function(){
     return view('telaPrincipal');
