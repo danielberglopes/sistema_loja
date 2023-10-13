@@ -161,23 +161,23 @@
 
 			<nav id="sidebar__nav">
 				<ul>
-					<li class="menu-heading"><span>Manage</span></li>
+					<li class="menu-heading"><span>As funcionalidades</span></li>
 
                     <li>
-						<a href="#">
+						<a href="#" class="active">
 							<svg>
 						<img src="img\casa.png" alt="" style=" width: 3rem;">
 							</svg>
-							<span>Settings</span>
+							<span>Inicio</span>
 						</a>
 					</li>
-                    
+
 					<li>
-						<a href="#" class="active">
+						<a href="#" >
 							<svg>
 								<img src="img\registro.png" alt="" style=" width: 3rem;">
 							</svg>
-							<span>Dashboard</span>
+							<span>Cadastrar um quarto</span>
 						</a>
 					</li>
 					<li>
@@ -193,7 +193,7 @@
 							<svg>
 								<img src="img\icons8-vendas-totais-100.png" alt="" style=" width: 3rem;">
 							</svg>
-							<span>Plugins</span>
+							<span>Renda mensal</span>
 						</a>
 					</li>
 					<li>
@@ -201,7 +201,7 @@
 							<svg>
 					<img src="img\funcionarios.png" alt="" style=" width: 3rem;">
 							</svg>
-							<span>Users</span>
+							<span>funcionários(a)</span>
 						</a>
 					</li>
 				
