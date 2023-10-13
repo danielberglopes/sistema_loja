@@ -20,20 +20,49 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 ">
   <div class="row gy-6">
     <div class="col-6">
-      <div id="bloco" class="p-3 bloco01"  style="     color: #fff;    font-size: 131%;
-background-color: #0d6efdbf;">Total de quartos</div>
+      <div id="bloco" class="p-3 bloco01"  style="          display: flex;
+   color: #fff;    font-size: 131%;
+background-color: #0d6efdbf;"><h1 style="        font-size: 98%;">Total de quartos</h1>
+
+
+<img src="\img\hotel.png" alt="" style="height: 39px;
+       
+        margin-left: auto;">
+</div>
     </div>
     <div class="col-6">
-      <div id="bloco" class="p-3" style="       color: #fff;      font-size: 131%;
-   background-color: #f500009c;">Total de quartos Ocupados</div>
+      <div id="bloco" class="p-3" style="          display: flex;
+     color: #fff;      font-size: 131%;
+   background-color: #f500009c;"><h1 style="        font-size: 98%;">Total de quartos Ocupados</h1>
+   
+  
+   <img src="\img\hotel.png" alt="" style="height: 39px;
+       
+       margin-left: auto;">
+  
+  </div>
+
     </div>
     <div class="col-6">
-      <div id="bloco" class="p-3" style="margin-top: 4rem;        color: #fff;     font-size: 131%;
-    background-color: #198754; ">Total de quartos disponível</div>
+      <div id="bloco" class="p-3" style="margin-top: 4rem;     display: flex;      color: #fff;     font-size: 131%;
+    background-color: #198754; "><h1 style="        font-size: 98%;">Total de quartos disponível</h1>
+    
+    <img src="\img\hotel.png" alt="" style="height: 39px;
+       
+       margin-left: auto;">
+  
+  </div>
     </div>
     <div class="col-6">
-      <div  id="bloco" class="p-3" style="margin-top: 4rem;      color: #fff;     font-size: 131%;
-      background-color: #ffc107b8;">Total de quartos reservador</div>
+      <div  id="bloco" class="p-3" style="margin-top: 4rem;  display: flex;    color: #fff;     font-size: 131%;
+      background-color: #ffc107b8;"><h1 style="        font-size: 98%;">Total de quartos reservador</h1>
+      
+    
+    
+      <img src="\img\hotel.png" alt="" style="height: 39px;
+       
+       margin-left: auto;">
+    </div>
     </div>
   </div>
 </div>
