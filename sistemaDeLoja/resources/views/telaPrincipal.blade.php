@@ -23,16 +23,16 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 <div class="container text-center" style="margin-top: -10rem;">
   <div class="row gy-6">
     <div class="col-6">
-      <div id="bloco" class="p-3" >Custom column padding</div>
+      <div id="bloco" class="p-3" >Total de quartos</div>
     </div>
     <div class="col-6">
-      <div id="bloco" class="p-3">Custom column padding</div>
+      <div id="bloco" class="p-3">Total de quartos Ocupados</div>
     </div>
     <div class="col-6">
-      <div id="bloco" class="p-3" style="margin-top: 4rem; ">Custom column padding</div>
+      <div id="bloco" class="p-3" style="margin-top: 4rem; ">Total de quartos disponível</div>
     </div>
     <div class="col-6">
-      <div  id="bloco" class="p-3" style="margin-top: 4rem;">Custom column padding</div>
+      <div  id="bloco" class="p-3" style="margin-top: 4rem;">Total de quartos reservador</div>
     </div>
   </div>
 </div>
