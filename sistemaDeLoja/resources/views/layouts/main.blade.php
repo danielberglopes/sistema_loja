@@ -162,10 +162,20 @@
 			<nav id="sidebar__nav">
 				<ul>
 					<li class="menu-heading"><span>Manage</span></li>
+
+                    <li>
+						<a href="#">
+							<svg>
+						<img src="img\casa.png" alt="" style=" width: 3rem;">
+							</svg>
+							<span>Settings</span>
+						</a>
+					</li>
+                    
 					<li>
 						<a href="#" class="active">
 							<svg>
-								<use xlink:href="#icon-dashboard"></use>
+								<img src="img\registro.png" alt="" style=" width: 3rem;">
 							</svg>
 							<span>Dashboard</span>
 						</a>
@@ -173,15 +183,15 @@
 					<li>
 						<a href="#">
 							<svg>
-								<use xlink:href="#icon-appearance"></use>
+								<img src="img\calendario.png" alt="" style=" width: 3rem;">
 							</svg>
-							<span>Appearance</span>
+							<span>Reserva</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<svg>
-								<use xlink:href="#icon-plugins"></use>
+								<img src="img\icons8-vendas-totais-100.png" alt="" style=" width: 3rem;">
 							</svg>
 							<span>Plugins</span>
 						</a>
@@ -189,52 +199,12 @@
 					<li>
 						<a href="#">
 							<svg>
-								<use xlink:href="#icon-users"></use>
+					<img src="img\funcionarios.png" alt="" style=" width: 3rem;">
 							</svg>
 							<span>Users</span>
 						</a>
 					</li>
-					<li>
-						<a href="#">
-							<svg>
-								<use xlink:href="#icon-settings"></use>
-							</svg>
-							<span>Settings</span>
-						</a>
-					</li>
-					<li class="menu-heading"><span>Content</span></li>
-					<li>
-						<a href="#">
-							<svg>
-								<use xlink:href="#icon-posts"></use>
-							</svg>
-							<span>Posts</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<svg>
-								<use xlink:href="#icon-media"></use>
-							</svg>
-							<span>Media</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<svg>
-								<use xlink:href="#icon-pages"></use>
-							</svg>
-							<span>Pages</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<svg>
-								<use xlink:href="#icon-comments"></use>
-							</svg>
-							<span>Comments</span>
-						</a>
-					</li>
+				
 				</ul>
 			</nav>
 
