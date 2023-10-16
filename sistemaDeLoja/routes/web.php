@@ -23,6 +23,18 @@ Route::match(['get', 'post'], '/', [Controller::class,  'logon']);
 
 Route::match(['get', 'post'], '/auth', [Controller::class, 'auth'])->name('auth.uer');
 
-Route::get('/telaPrincipal', function(){
+Route::get('/telaPrincipal', function () {
     return view('telaPrincipal');
 });
+
+Route::match(['get', 'post'], '/cadastrarUmQuarto', [Controller::class, 'index']);
+
+
+Route::match(['get', 'post'], '/resevar', [Controller::class, 'resevarQuarto']);
+
+
+Route::match(['get', 'post'], '/funcionarios', [Controller::class, 'CriarFuncionar']);
+
+
+
+Route::match(['get', 'post'], '/criarFuncionario', [Controller::class, 'criarNovo']);

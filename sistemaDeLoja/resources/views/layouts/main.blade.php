@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="app.css">
     @yield('css')
 </head>
-<body>
+<body style="background-color: #adb5bd9c;">
 
 	<!-- SVG Definitions -->
 	<svg style="display: none">
@@ -138,13 +138,7 @@
 
 			
 			</ul>
-<!-- 
-			<a href="#">
-				<span>Welcome, admin</span>
-				<svg>
-					<use xlink:href="#icon-user"></use>
-				</svg>
-			</a> -->
+
 		</nav>
 	</header> <!-- main-header -->
 
@@ -164,7 +158,7 @@
 					<li class="menu-heading"><span>As funcionalidades</span></li>
 
                     <li>
-						<a href="#" class="active">
+						<a href="/telaPrincipal" class="active">
 							<svg>
 						<img src="img\casa.png" alt="" style=" width: 3rem;">
 							</svg>
@@ -173,7 +167,7 @@
 					</li>
 
 					<li>
-						<a href="#" >
+						<a href="/cadastrarUmQuarto" >
 							<svg>
 								<img src="img\registro.png" alt="" style=" width: 3rem;">
 							</svg>
@@ -181,7 +175,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="/resevar">
 							<svg>
 								<img src="img\calendario.png" alt="" style=" width: 3rem;">
 							</svg>
@@ -197,7 +191,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="/funcionarios">
 							<svg>
 					<img src="img\funcionarios.png" alt="" style=" width: 3rem;">
 							</svg>
@@ -220,9 +214,9 @@
 		
 		</div> <!-- sidebar -->
 
-		<div id="main-content" style="background-color: #adb5bd9c;">
+		<div id="main-content" >
             
-			<div id="main-content__container">
+			<div id="main-content__container" >
             @yield('content')
 
 			</div>

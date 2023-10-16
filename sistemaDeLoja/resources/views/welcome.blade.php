@@ -506,7 +506,7 @@ button:hover {
     </div>
     <footer>
         <div>
-            <a id="content-footer" href="https://locabox.com.br/desenvolvedores/" target="_blank">Desenvolvedores</a>
+            {{-- <a id="content-footer" href="https://locabox.com.br/desenvolvedores/" target="_blank">Desenvolvedores</a> --}}
         </div>
     </footer>
 
