@@ -7,17 +7,18 @@
 @endsection
 @section('content')
 <div class="container-fluid mt-5" >
-<form class="row g-3">
+<form class="row g-3"  method="post" action="{{route('auth.criar')}}">
+@csrf
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">Primeiro nome</label>
-    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+    <input type="text" name="nome" class="form-control is-valid" id="validationServer01" value="Mark" required>
     <div class="valid-feedback">
    Parece bom!
     </div>
   </div>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Sobrenome</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+    <input type="text" name="sobrenome" class="form-control is-valid" id="validationServer02" value="Otto" required>
     <div class="valid-feedback">
  Parece bom!
     </div>
@@ -27,7 +28,7 @@
 </label>
     <div class="input-group has-validation">
       <span class="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <input type="text" name="Email" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
       <div id="validationServerUsernameFeedback" class="invalid-feedback">
     Escolha um nome de usuário.
 
@@ -36,14 +37,14 @@
   </div>
   <div class="col-md-6">
     <label for="validationServer03" class="form-label">Função</label>
-    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+    <input type="text" name="funcao" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
     <div id="validationServer03Feedback" class="invalid-feedback">
      Forneça um Função válido.
     </div>
   </div>
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">RG</label>
-    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <input type="text" name="rg" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
     <div id="validationServer05Feedback" class="invalid-feedback">
      Forneça um CEP válido.
     </div>
@@ -51,7 +52,7 @@
 
   <div class="col-md-3">
     <label for="validationServer05" class="form-label">Telefone</label>
-    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <input type="text" name="telefone" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
     <div id="validationServer05Feedback" class="invalid-feedback">
      Forneça um CEP válido.
     </div>
@@ -61,32 +62,25 @@
 
    <div class="col-md-4">
     <label for="validationServer02" class="form-label">CPF</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+    <input type="text" name="cpf" class="form-control is-valid" id="validationServer02" value="Otto" required>
     <div class="valid-feedback">
  Parece bom!
     </div>
   </div>
 
     <div class="col-md-3">
-    <label for="validationServer05" class="form-label">Telefone-fixo</label>
-    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-    <div id="validationServer05Feedback" class="invalid-feedback">
-     Forneça um CEP válido.
-    </div>
-  </div>
-    <div class="col-md-3">
     <label for="validationServer05" class="form-label">Numero da carteira de trablho</label>
-    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <input type="text" name="numeroDacateiiraDeTrabalho" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
     <div id="validationServer05Feedback" class="invalid-feedback">
      Forneça um  numero válido.
     </div>
   </div>
  <div class="col-md-3">
     <label for="validationServer04" class="form-label">Turno de trabalho</label>
-    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+    <select name="turno" class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Escolher...</option>
-    		<option value="SP">Tarde</option>
-		<option value="RJ">Noite</option>
+    		<option value="Tarde">Tarde</option>
+		<option value="Noite">Noite</option>
 		
     </select>
     <div id="validationServer04Feedback" class="invalid-feedback">

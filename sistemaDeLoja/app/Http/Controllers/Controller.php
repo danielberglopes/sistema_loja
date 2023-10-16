@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Funcionario;
 
 class Controller extends BaseController
 {
@@ -48,7 +49,13 @@ class Controller extends BaseController
 
     public function CriarFuncionar()
     {
-        return view('/funcionarios');
+
+
+        $funcionario = Funcionario::all();
+        return view('/funcionarios',compact('funcionario',));
+
+
+        
     }
 
 
@@ -56,5 +63,32 @@ class Controller extends BaseController
     public function criarNovo()
     {
         return view('/criarFuncionario');
+    }
+
+
+    public function rendaMl(){
+        return view ('/rendaMensal');
+    }
+
+
+
+
+    public function criarFuncionarioNovo(Request $request){
+
+        $posts = new Funcionario();
+        $posts->nome = $request->nome;
+        $posts->sobrenome = $request->sobrenome;
+        $posts->Email = $request->Email;
+        $posts->telefone = $request->telefone;
+        $posts->cpf = $request->cpf;
+        $posts->rg = $request->rg;
+        $posts->funcao = $request->funcao;
+        $posts->numeroDacateiiraDeTrabalho = $request->numeroDacateiiraDeTrabalho;
+        $posts->turno = $request->turno;
+
+        $posts->save();
+
+        return view('/telaPrincipal');
+        
     }
 }

@@ -179,11 +179,11 @@
 							<svg>
 								<img src="img\calendario.png" alt="" style=" width: 3rem;">
 							</svg>
-							<span>Reserva</span>
+							<span>Reserva de hotel</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="/rendaMensal">
 							<svg>
 								<img src="img\icons8-vendas-totais-100.png" alt="" style=" width: 3rem;">
 							</svg>

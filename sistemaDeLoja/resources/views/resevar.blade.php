@@ -78,14 +78,14 @@
   </div>
 
  <div class="col-md-3">
-    <label for="validationServer04" class="form-label">Total de quarto</label>
+    <label for="validationServer04" class="form-label">Quantos dias</label>
     <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
       <option selected disabled value="">Escolher...</option>
-    		<option value="SP">1 quarto</option>
-		<option value="RJ">2 quarto</option>
-		<option value="PB">3 quarto</option>
-        <option value="PB">4 quarto</option>
-        <option value="PB">5 quarto</option>
+    		<option value="SP">1 dia</option>
+		<option value="RJ">2 dia</option>
+		<option value="PB">3 dia</option>
+        <option value="PB">4 dia</option>
+        <option value="PB">5 dia</option>
     </select>
     <div id="validationServer04Feedback" class="invalid-feedback">
     Forneça uma cidade válida.

@@ -38,3 +38,9 @@ Route::match(['get', 'post'], '/funcionarios', [Controller::class, 'CriarFuncion
 
 
 Route::match(['get', 'post'], '/criarFuncionario', [Controller::class, 'criarNovo']);
+
+
+
+Route::match(['get', 'post'], '/rendaMensal',[Controller::class,'rendaMl']);
+
+Route::match(['get','post'],'/authciar', [Controller::class, 'criarFuncionarioNovo'])->name('auth.criar');
