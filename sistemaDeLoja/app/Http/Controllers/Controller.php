@@ -34,9 +34,17 @@ class Controller extends BaseController
         }
     }
 
+<<<<<<< Updated upstream
     public function index()
     {
         return view('/cadastrarUmQuarto');
+=======
+
+        public function criar(){
+            return view('/CadastrarOsQuarto');
+        }
+
+>>>>>>> Stashed changes
     }
 
 

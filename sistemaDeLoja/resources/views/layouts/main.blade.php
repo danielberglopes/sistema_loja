@@ -167,7 +167,11 @@
 					</li>
 
 					<li>
+<<<<<<< Updated upstream
 						<a href="/cadastrarUmQuarto" >
+=======
+						<a href="/CadastrarOsQuarto" >
+>>>>>>> Stashed changes
 							<svg>
 								<img src="img\registro.png" alt="" style=" width: 3rem;">
 							</svg>

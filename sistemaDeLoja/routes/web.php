@@ -27,6 +27,7 @@ Route::get('/telaPrincipal', function () {
     return view('telaPrincipal');
 });
 
+<<<<<<< Updated upstream
 Route::match(['get', 'post'], '/cadastrarUmQuarto', [Controller::class, 'index']);
 
 
@@ -44,3 +45,6 @@ Route::match(['get', 'post'], '/criarFuncionario', [Controller::class, 'criarNov
 Route::match(['get', 'post'], '/rendaMensal',[Controller::class,'rendaMl']);
 
 Route::match(['get','post'],'/authciar', [Controller::class, 'criarFuncionarioNovo'])->name('auth.criar');
+=======
+Route::match(['get','post'], '/CadastrarOsQuarto',[Controller::class,'criar']);
+>>>>>>> Stashed changes
