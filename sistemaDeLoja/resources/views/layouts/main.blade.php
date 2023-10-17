@@ -133,11 +133,13 @@
 						</svg>
 					</a>
 				</li>
-		
-				
-
 			
 			</ul>
+
+
+
+
+			
 
 		</nav>
 	</header> <!-- main-header -->
@@ -155,7 +157,28 @@
 
 			<nav id="sidebar__nav">
 				<ul>
+
+
+				<ul>
+				<li id="main-header__logo">
+
+				<p style="        font-family: monospace;
+        color: #fff;
+">Hora: {{ $horaFormatada }}</p>
+    
+				</li>
+			
+			</ul>
+
+
 					<li class="menu-heading"><span>As funcionalidades</span></li>
+
+
+
+
+		
+
+
 
                     <li>
 						<a href="/telaPrincipal" class="active">
@@ -165,13 +188,11 @@
 							<span>Inicio</span>
 						</a>
 					</li>
-
 					<li>
-<<<<<<< Updated upstream
-						<a href="/cadastrarUmQuarto" >
-=======
-						<a href="/CadastrarOsQuarto" >
->>>>>>> Stashed changes
+
+
+						<a href="/Quarto" >
+
 							<svg>
 								<img src="img\registro.png" alt="" style=" width: 3rem;">
 							</svg>
@@ -274,5 +295,25 @@ const switchTheme = () => {
 // Add the event listener for the theme switcher
 document.querySelector('#sidebar__theme-switcher').addEventListener('click', switchTheme)
     </script>
+
+
+<script>
+    function atualizarDataHoraAtual() {
+        var elementoDataHora = document.getElementById("dataHoraAtual");
+        var dataHoraAtual = new Date();
+        var options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        };
+        var dataHoraFormatada = dataHoraAtual.toLocaleDateString('pt-BR', options);
+        elementoDataHora.textContent = dataHoraFormatada;
+    }
+
+    atualizarDataHoraAtual();
+    setInterval(atualizarDataHoraAtual, 1000);
+</script>
 </body>
 </html>

@@ -25,37 +25,52 @@
    
        
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisa..." aria-label="Search">
+      <form class="d-flex" role="search " method="GET" action="{{route('produtos.search')}}" class="d-flex formPesquisar">
+        <input class="form-control me-2" name="nome" type="search" placeholder="Pesquisa..." aria-label="Search">
         <button class="btn btn btn-success" type="submit">Pesquisa</button>
       </form>
     </div>
   </div>
 </nav>
 
-<table class="table table-bordered border-primary ">
 
-  
-    <thead >
-    <tr class="table-active" style="font-family: monospace;">
-      <th scope="col">Nome</th>
-      <th scope="col">Função </th>
-      <th scope="col">Turno </th>
-      <th scope="col">acoes</th>
+
+<table class="table table-bordered border-primary">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Funcao</th>
+        
+          <th>CPF</th>
+          <th>Turno</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      @foreach($funcionario as $funcionarios)
+      <tr>
+      <th>{{ $funcionarios->nome }}</th>
+      <td>{{ $funcionarios->funcao }}</td>
+      <td>{{ $funcionarios->cpf }}</td>
+      <td>{{ $funcionarios->turno }}</td>
+      
+
+<th style="width: 21%;"><button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-danger" style="        margin-left: 4rem;">Primary</button>
+</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-    @foreach($funcionario as $funcionarios)
-      <th>$funcionarios->nome</th>
-      <td>$funcionarios->funcao</td>
-      <td>$funcionarios->turno</td>
-      <td></td>
-    </tr>
-    @endforeach
-  </tbody>
-  
-</table>
+      @endforeach
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
