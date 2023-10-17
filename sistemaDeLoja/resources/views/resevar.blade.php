@@ -6,7 +6,46 @@
   </head>
 @endsection
 @section('content')
-<div class="container-fluid mt-5" >
+<h2 style="font-family: monospace;  font-size: 200%;">Todas reservar do, nos cliente</h2>
+
+
+
+<br><br><br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<!-- <div class="container-fluid mt-5" >
 <form class="row g-3">
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">Primeiro nome</label>
@@ -120,5 +159,5 @@ integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa
 crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
 integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
-crossorigin="anonymous"></script>
+crossorigin="anonymous"></script> -->
 @endsection

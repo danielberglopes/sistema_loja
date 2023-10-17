@@ -152,7 +152,7 @@
 				<svg>
 					<use xlink:href="#icon-collapse"></use>
 				</svg>
-				<span>Collapse menu</span>
+				<span>Recolher menu</span>
 			</button>
 
 			<nav id="sidebar__nav">
