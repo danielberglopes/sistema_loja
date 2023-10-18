@@ -11,14 +11,38 @@
 
 
 <br><br><br>
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a href="#">
+  <button type="button" class="btn btn-secondary">adicionar novo funcionario</button>
+  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     
+     
+      
+        
+   
+       
+      </ul>
+      <form class="d-flex" role="search " method="GET" action="" class="d-flex formPesquisar">
+        <input class="form-control me-2" name="nome" type="search" placeholder="Pesquisa..." aria-label="Search">
+        <button class="btn btn btn-success" type="submit">Pesquisa</button>
+      </form>
+    </div>
+  </div>
+</nav>
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Cpf</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Data Atual</th>
+      <th scope="col">Data de entrega</th>
     </tr>
   </thead>
   <tbody>
@@ -27,17 +51,20 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
+      <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
       <td>Thornton</td>
       <td>@fat</td>
+      <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td colspan="2">Larry the Bird</td>
       <td>@twitter</td>
+      <td>@mdo</td>
     </tr>
   </tbody>
 </table>
