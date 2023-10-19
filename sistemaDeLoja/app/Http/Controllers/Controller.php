@@ -9,6 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Funcionario;
+use Illuminate\Contracts\View\View;
 
 class Controller extends BaseController
 {
@@ -104,7 +105,7 @@ class Controller extends BaseController
         return view ('/rendaMensal',compact( 'horaFormatada'));
     }
 
-    public function criarFuncionarioNovo(Request $request){
+    public function criarFuncionarioNovo(Request $request,$id ){
         $agora = Carbon::now();
 
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
@@ -124,5 +125,16 @@ class Controller extends BaseController
 
         return view('/telaPrincipal',compact('horaFormatada','total'));
         
+    }
+
+
+   
+
+    
+    public function destroy($id)
+    {
+        $produto = Funcionario::findOrFail($id);
+        $produto->delete();
+        return View('/funcionarios',   compact(' produto'));
     }
 }

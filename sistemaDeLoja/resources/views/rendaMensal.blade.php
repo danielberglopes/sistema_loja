@@ -9,6 +9,9 @@ crossorigin="anonymous">
 @section('content')
 
 <h2 style="font-family: monospace;  font-size: 200%;">Controler de renda mensal</h2><br>
+
+
+
 <div class="container-fluid" >
   <!-- Content here -->
   <div class="container px-4 text-center">
@@ -32,7 +35,32 @@ crossorigin="anonymous">
     </div>
   </div>
 </div>
-</div>
+</div> <br> 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a href="/criarFuncionario">
+  <button type="button" class="btn " style="background-color: #e33535f2; color: #fff;
+">adicionar novo funcionario</button>
+  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     
+     
+      
+        
+   
+       
+      </ul>
+      <form class="d-flex" role="search " method="GET" action="{{route('produtos.search')}}" class="d-flex formPesquisar">
+        <input class="form-control me-2" name="nome" type="search" placeholder="Pesquisa..." aria-label="Search">
+        <button class="btn btn btn-success" type="submit">Pesquisa</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
 
 

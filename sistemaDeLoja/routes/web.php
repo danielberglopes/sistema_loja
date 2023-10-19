@@ -48,3 +48,11 @@ Route::match(['get', 'post'], '/criarFuncionario', [Controller::class, 'criarNov
 Route::match(['get', 'post'], '/rendaMensal',[Controller::class,'rendaMl']);
 
 Route::match(['get','post'],'/authciar', [Controller::class, 'criarFuncionarioNovo'])->name('auth.criar');
+
+
+
+
+
+// Route::delete('/delete/{id}', [Controller::class, 'destroy']);
+Route::delete('/produtos/{produto}', [Controller::class,'destroy'])->name('produtos.destroy');
+// Route::delete('/produtos/{produto}', [Controller::class, 'destroy']);

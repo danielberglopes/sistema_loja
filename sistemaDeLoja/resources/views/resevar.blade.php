@@ -14,7 +14,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a href="#">
-  <button type="button" class="btn btn-secondary">adicionar novo funcionario</button>
+  <button type="button" class="btn " style="background-color: #e33535f2; color: #fff;
+">adicionar novo funcionario</button>
   </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
