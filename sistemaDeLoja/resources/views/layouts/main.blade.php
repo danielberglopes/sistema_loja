@@ -139,7 +139,16 @@
 
 
 
+			<ul>
+				<li id="main-header__logo">
+					<a href="index.html">
+						<svg>
+							<img style="width: 34px;" src="img\suporte-ao-cliente.png" alt="">
+						</svg>
+					</a>
+				</li>
 			
+			</ul>
 
 		</nav>
 	</header> <!-- main-header -->
@@ -246,10 +255,7 @@
 
 			</div>
 
-			<footer class="container-fluid">
-				<h1 style="text-align: end;">
-			<img style="        width: 59px;" src="img\fone-de-ouvido.png" alt=""></h1>
-			</footer>
+		
 		</div> <!-- main-content -->
 	</section> <!-- main -->
 
