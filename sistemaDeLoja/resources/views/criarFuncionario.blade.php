@@ -11,17 +11,17 @@
 @csrf
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">Primeiro nome</label>
-    <input type="text" name="nome" class="form-control is-valid" id="validationServer01" value="Mark" required>
-    <div class="valid-feedback">
+    <input type="text" name="nome" class="form-control is-valid" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"  required>
+    {{-- <div class="valid-feedback">
    Parece bom!
-    </div>
+    </div> --}}
   </div>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Sobrenome</label>
-    <input type="text" name="sobrenome" class="form-control is-valid" id="validationServer02" value="Otto" required>
-    <div class="valid-feedback">
+    <input type="text" name="sobrenome" class="form-control is-valid" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"  required>
+    {{-- <div class="valid-feedback">
  Parece bom!
-    </div>
+    </div> --}}
   </div>
   <div class="col-md-4">
     <label for="validationServerUsername" class="form-label">E-mail
@@ -30,7 +30,7 @@
       <span class="input-group-text" id="inputGroupPrepend3">@</span>
       <input type="text" name="Email" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
       <div id="validationServerUsernameFeedback" class="invalid-feedback">
-    Escolha um nome de usuário.
+    Escolha um Email usuário.
 
       </div>
     </div>

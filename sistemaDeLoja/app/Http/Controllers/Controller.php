@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -27,32 +28,33 @@ class Controller extends BaseController
     {
 
         $agora = Carbon::now();
-       
+
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
         $total = Funcionario::count();
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
 
-            return view('/telaPrincipal',compact( 'horaFormatada','total'));
+            return view('/telaPrincipal', compact('horaFormatada', 'total'));
         } else {
             return view('/welcome');
         }
     }
-     public function Pricpal(){
+    public function Pricpal()
+    {
         $agora = Carbon::now();
         $total = Funcionario::count();
-       
+
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
-        return view('/telaPrincipal',compact('horaFormatada','total'));
-     }
+        return view('/telaPrincipal', compact('horaFormatada', 'total'));
+    }
 
     public function indexc()
     {
 
         $agora = Carbon::now();
-        
+
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
 
-        return view('/Quarto',compact( 'horaFormatada'));
+        return view('/Quarto', compact('horaFormatada'));
     }
 
 
@@ -60,10 +62,10 @@ class Controller extends BaseController
     public function resevarQuarto()
     {
         $agora = Carbon::now();
-   
+
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
 
-        return view('/resevar', compact( 'horaFormatada'));
+        return view('/resevar', compact('horaFormatada'));
     }
 
 
@@ -78,10 +80,7 @@ class Controller extends BaseController
         $nome = $request->input('nome');
         $funcionario = Funcionario::where('nome', 'LIKE', '%' . $nome . '%')->get();
 
-        return view('/funcionarios',compact('funcionario', 'horaFormatada'));
-
-
-        
+        return view('/funcionarios', compact('funcionario', 'horaFormatada'));
     }
 
 
@@ -92,20 +91,24 @@ class Controller extends BaseController
         $agora = Carbon::now();
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
 
-        return view('/criarFuncionario',compact('horaFormatada'));
+        return view('/criarFuncionario', compact('horaFormatada'));
     }
 
 
-    public function rendaMl(){
+    public function rendaMl()
+    {
 
         $agora = Carbon::now();
 
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
 
-        return view ('/rendaMensal',compact( 'horaFormatada'));
+        return view('/rendaMensal', compact('horaFormatada'));
     }
 
-    public function criarFuncionarioNovo(Request $request,$id ){
+
+    public function criarFuncionarioNovo(Request $request)
+    {
+
         $agora = Carbon::now();
 
         $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
@@ -123,18 +126,23 @@ class Controller extends BaseController
 
         $posts->save();
 
-        return view('/telaPrincipal',compact('horaFormatada','total'));
-        
+        return view('/telaPrincipal', compact('horaFormatada', 'total'));
     }
 
 
-   
 
-    
-    public function destroy($id)
+
+    public function destroy(Funcionario $funcionarios)
     {
-        $produto = Funcionario::findOrFail($id);
-        $produto->delete();
-        return View('/funcionarios',   compact(' produto'));
+        $agora = Carbon::now();
+
+        $horaFormatada = $agora->format('H:i:s'); // Formato: Hora:Minuto:Segundo
+
+        $total = Funcionario::count();
+
+
+        $funcionarios->delete();
+
+        return redirect()->route('produtos.search', compact('total', 'horaFormatada'))->with('success', 'Funcionário excluído com sucesso.');
     }
 }

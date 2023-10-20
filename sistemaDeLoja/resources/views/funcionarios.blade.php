@@ -49,18 +49,41 @@
       </thead>
       <tbody>
       @foreach($funcionario as $funcionarios)
-      <tr>
+      <tr style="font-size: 93%;">
       <th>{{ $funcionarios->nome }}</th>
       <td>{{ $funcionarios->funcao }}</td>
       <td>{{ $funcionarios->cpf }}</td>
       <td>{{ $funcionarios->turno }}</td>
       
 
-      <td></td>
+
+      
+  
 
 
 
 
+
+<th style="display: flex;">
+  <button type="submit"  style="height: 30px; background-color: #fff;    border: 1px solid #fff;">
+  
+  <img style="height: 30px;" src="img\editar.png" alt="">
+  </button>
+    <div>
+       
+        <form action="{{ route('items.destroy', $funcionarios) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" onclick="return confirm('Tem certeza que deseja excluir este item?')" style="margin-left: 1rem; height: 30px; background-color: #fff;    border: 1px solid #fff;">
+            
+            <img style="height: 30px;" src="img\lixo.png" alt="">
+            </button>
+        </form>
+    </div>
+
+
+</th>
+    </tr>
 
       @endforeach
       </tbody>
