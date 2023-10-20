@@ -245,6 +245,11 @@
             @yield('content')
 
 			</div>
+
+			<footer class="container-fluid">
+				<h1 style="text-align: end;">
+			<img style="        width: 59px;" src="img\fone-de-ouvido.png" alt=""></h1>
+			</footer>
 		</div> <!-- main-content -->
 	</section> <!-- main -->
 
