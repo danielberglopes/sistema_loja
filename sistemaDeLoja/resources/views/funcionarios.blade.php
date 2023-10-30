@@ -20,11 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
      
-     
-      
-        
-   
-       
+    
       </ul>
       <form class="d-flex" role="search " method="GET" action="{{route('produtos.search')}}" class="d-flex formPesquisar">
         <input class="form-control me-2" name="nome" type="search" placeholder="Pesquisa..." aria-label="Search">
@@ -62,14 +58,11 @@
 
 
 
-
-
 <th style="display: flex;">
-  <button type="submit"  style="height: 30px; background-color: #fff;    border: 1px solid #fff;">
-  
-  <img style="height: 30px;" src="img\editar.png" alt="">
-  </button>
-    <div>
+  <a href="{{route('users.edit',  $funcionarios)}}">
+<img style="height: 30px;" src="img\editar.png" alt="">
+</a>
+  <div>
        
         <form action="{{ route('items.destroy', $funcionarios) }}" method="POST">
             @csrf
@@ -88,6 +81,21 @@
       @endforeach
       </tbody>
     </table>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item {{ $funcionario->currentPage() == 1 ? 'disabled' : '' }}">
+      <a class="page-link" href="{{ $funcionario->previousPageUrl() }}">Previous</a>
+    </li>
+    @for ($i = 1; $i <= $funcionario->lastPage(); $i++)
+      <li class="page-item {{ $i == $funcionario->currentPage() ? 'active' : '' }}">
+        <a class="page-link" href="{{ $funcionario->url($i) }}">{{ $i }}</a>
+      </li>
+    @endfor
+    <li class="page-item {{ $funcionario->currentPage() == $funcionario->lastPage() ? 'disabled' : '' }}">
+      <a class="page-link" href="{{ $funcionario->nextPageUrl() }}">Next</a>
+    </li>
+  </ul>
+</nav>
 
 
 

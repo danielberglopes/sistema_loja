@@ -127,7 +127,7 @@
 
 			<ul>
 				<li id="main-header__logo">
-					<a href="index.html">
+					<a href="#">
 						<svg>
 							<use xlink:href="#logo"></use>
 						</svg>
@@ -141,7 +141,7 @@
 
 			<ul>
 				<li id="main-header__logo">
-					<a href="index.html">
+					<a href="#">
 						<svg>
 							<img style="width: 34px;" src="img\suporte-ao-cliente.png" alt="">
 						</svg>

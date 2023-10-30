@@ -39,11 +39,17 @@ Route::match(['get', 'post'], '/resevar', [Controller::class, 'resevarQuarto']);
 
 Route::match(['get', 'post'], '/funcionarios', [Controller::class, 'CriarFuncionar'])->name('produtos.search');
 
-
-
 Route::match(['get', 'post'], '/criarFuncionario', [Controller::class, 'criarNovo']);
 
 Route::delete('criarFuncionario/{funcionarios}', [Controller::class, 'destroy'])->name('items.destroy');
+
+
+
+Route::match(['get', 'post'], '/users{id}/edit', [Controller::class, 'edit'])->name('users.edit'); // rota para leva ate a tela de edita
+
+// Route::put(['get', 'post'], '/users{id}', [Controller::class, 'update'])->name('users.update');
+Route::put('/users/{id}', [Controller::class, 'update'])->name('users.update');
+
 
 Route::match(['get', 'post'], '/rendaMensal', [Controller::class, 'rendaMl']);
 

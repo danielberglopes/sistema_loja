@@ -38,7 +38,7 @@ crossorigin="anonymous">
 </div> <br> 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a href="/criarFuncionario">
+    <a href="">
   <button type="button" class="btn " style="background-color: #e33535f2; color: #fff;
 ">adicionar novo funcionario</button>
   </a>
